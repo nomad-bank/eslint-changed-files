@@ -91,7 +91,7 @@ else
         reviewdog -f=rdjson \
           -name=eslint \
           -reporter="${INPUT_REPORTER}" \
-          -filter-mode="nofilter" \
+          -filter-mode="added" \
           -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
           -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
       fi
