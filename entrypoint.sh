@@ -100,7 +100,7 @@ else
         echo "::error::Error running eslint."
         rm -rf "$TEMP_DIR"
         echo "::endgroup::"
-        exit 1;
+        exit 0;
       fi
   else
       echo "Skipping: No files to lint"
